@@ -1,0 +1,64 @@
+{
+  "labels": ["January", "February", "March"],
+  "datasets": [
+    {
+      "label": "Cookies",
+      "backgroundColor": "rgba(255,99,132,0.2)",
+      "data": [60, 20, 20],
+      "stack": "Stack 1"
+    },
+    {
+      "label": "Cookies",
+      "backgroundColor": "rgba(255,99,132,0.2)",
+      "data": [60, 20, 20],
+      "stack": "Stack 2"
+    },
+    {
+      "label": "Cookies",
+      "backgroundColor": "rgba(255,99,132,0.2)",
+      "data": [60, 20, 20],
+      "stack": "Stack 3"
+    },
+    {
+      "label": "Scatter 1",
+      "type": "scatter",
+      "fill": false,
+      "showLine": false,
+      "backgroundColor": "rgba(99,255,132,0.2)",
+      "data": [
+        { "y": 30, "x": 1 },
+        { "y": 30, "x": 5 },
+        { "y": 10, "x": 9 }
+      ],
+      "xAxisID": "x-axis-2"
+    },
+    {
+      "label": "Scatter 2",
+      "type": "scatter",
+      "fill": false,
+      "showLine": false,
+      "backgroundColor": "rgba(99,255,132,0.2)",
+      "data": [
+        { "y": 24, "x": 2 },
+        { "y": 10, "x": 6 },
+        { "y": 15, "x": 10 }
+      ],
+      "xAxisID": "x-axis-2"
+    },
+    {
+      "label": "Scatter 3",
+      "type": "scatter",
+      "fill": false,
+      "showLine": false,
+      "backgroundColor": "rgba(99,255,132,0.2)",
+      "data": [
+        { "y": 50, "x": 3 },
+        { "y": 51, "x": 3 },
+        { "y": 9, "x": 7 },
+        { "y": 60, "x": 11 },
+        { "y": 69, "x": 11 }
+      ],
+      "xAxisID": "x-axis-2"
+    }
+  ]
+}
