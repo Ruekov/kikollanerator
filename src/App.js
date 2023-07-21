@@ -9,6 +9,7 @@ export default function App() {
   const canvasRef = React.useRef(null);
   const [value, setValue] = React.useState(10);
   const [options, setOptions] = React.useState({
+    responsive: true,
     plugins: {
       tooltip: { enabled: false },
       legend: { display: false },
@@ -73,8 +74,14 @@ export default function App() {
         <input type="number" value={value} onChange={handleChange} />{' '}
         <button onClick={handleOnClick}>HAZ LA 100CIA</button>
       </div>
-      <div style={{ height: '200px' }}>
+      <div className={'chart-container'}>
         <Chart type="bar" options={options} data={data} />
+      </div>
+      <div style={{ position: 'fixed', bottom: 0, right: 0 }}>
+        <img
+          width={'200px'}
+          src="https://atlasoportunidades.fundacionfelipegonzalez.cotec.es/wp-content/uploads/2020/07/kiko-llaneras.jpg"
+        />
       </div>
     </div>
   );
