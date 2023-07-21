@@ -75,9 +75,9 @@ export default function App() {
         }}
       >
         <div style={{ height: '20%' }}>
-          <h1>Kiko Llaneras Generator</h1>
+          <h1>Kiko Llanerator</h1>
           <a href="https://elpais.com/espana/elecciones-generales/2023-07-19/quien-va-a-ganar-las-elecciones-esto-dicen-las-encuestas.html">
-            <p>¿Cuántas simulaciones quieres hacer?</p>
+            <p>¿Cuantas simulaciones quieres hacer?</p>
           </a>
           <br />
           <input type="number" value={value} onChange={handleChange} />{' '}
