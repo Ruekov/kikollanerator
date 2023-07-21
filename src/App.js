@@ -1,32 +1,9 @@
 import React from 'react';
-import {
-  Chart as ChartJS,
-  LinearScale,
-  CategoryScale,
-  BarElement,
-  PointElement,
-  LineElement,
-  Legend,
-  Tooltip,
-  LineController,
-  BarController,
-  ScatterController,
-} from 'chart.js';
+import { Chart as ChartJS, registerables } from 'chart.js';
 import { Chart } from 'react-chartjs-2';
 import './style.css';
 
-ChartJS.register(
-  LinearScale,
-  CategoryScale,
-  BarElement,
-  PointElement,
-  LineElement,
-  Legend,
-  Tooltip,
-  ScatterController,
-  LineController,
-  BarController
-);
+ChartJS.register(...registerables);
 
 export default function App() {
   const canvasRef = React.useRef(null);
