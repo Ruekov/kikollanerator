@@ -66,16 +66,28 @@ export default function App() {
 
   return (
     <div>
-      <div style={{ height: '20%' }}>
-        <h1>Kiko Llaneras Generator</h1>
-        <a href="https://elpais.com/espana/elecciones-generales/2023-07-19/quien-va-a-ganar-las-elecciones-esto-dicen-las-encuestas.html">
-          <p>¿Cuantas simulaciones quieres hacer?</p>
-        </a>
-        <input type="number" value={value} onChange={handleChange} />{' '}
-        <button onClick={handleOnClick}>HAZ LA 100CIA</button>
-      </div>
-      <div className={'chart-container'}>
-        <Chart type="bar" options={options} data={data} />
+      <div
+        style={{
+          position: 'fixed',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+        }}
+      >
+        <div style={{ height: '20%' }}>
+          <h1>Kiko Llaneras Generator</h1>
+          <a href="https://elpais.com/espana/elecciones-generales/2023-07-19/quien-va-a-ganar-las-elecciones-esto-dicen-las-encuestas.html">
+            <p>¿Cuántas simulaciones quieres hacer?</p>
+          </a>
+          <br />
+          <input type="number" value={value} onChange={handleChange} />{' '}
+          <button onClick={handleOnClick}>HAZ LA 100CIA</button>
+          <br />
+          <br />
+        </div>
+        <div className={'chart-container'}>
+          <Chart type="bar" options={options} data={data} />
+        </div>
       </div>
       <div style={{ position: 'fixed', bottom: 0, right: 0 }}>
         <img
