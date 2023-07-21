@@ -79,7 +79,12 @@ export default function App() {
         <Chart type="bar" options={options} data={data} />
       </div>
       <div style={{ position: 'fixed', bottom: 0, right: 0 }}>
-        <img width={'200px'} src={'./kiko-llaneras.png'} />
+        <img
+          width={'200px'}
+          src={
+            'https://cdn.jsdelivr.net/gh/Ruekov/kikollanerator@stash-2023-21-07_09-41-25/public/kiko-llaneras%20(1).png'
+          }
+        />
       </div>
     </div>
   );
